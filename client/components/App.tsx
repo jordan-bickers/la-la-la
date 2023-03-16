@@ -1,5 +1,6 @@
 import Space100 from './Space100'
 import Space3 from './Space3'
+import Space4 from './Space4'
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       </div>
       <Space100 />
       <Space3 />
+      <Space4 />
     </div>
   )
 }
