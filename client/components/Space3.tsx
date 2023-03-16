@@ -1,25 +1,24 @@
-import { useState } from "react"
+import { useState } from 'react'
 
-function Space3(){
+function Space3() {
+  const [count, setCount] = useState(0)
 
-    // const [count, setCount] = useState(0)
-    // <div>
-    //   <img src="../../planet3" />
+  const handleClick = () => {
+    setCount(count + 3)
+    console.log('testing', count)
+  }
 
-    // </div>
-
-    // const handleClick = () => {
-    //   setCount(count + 1)
-    // }
-
-    return (
-      <div>
-        <img 
-        src="./public/images/planet3.png" alt="space3" onClick={handleClick}/>
-      </div>
-    )
-
- 
+  return (
+    <div>
+      <img
+        onClick={handleClick}
+        style={{ left: count * 3 + 'vw', position: 'fixed' }}
+        className="planet3"
+        src="./images/planet3.png"
+        alt="planet3"
+      />
+    </div>
+  )
 }
 
-export default Space3;
+export default Space3
