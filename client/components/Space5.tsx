@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-function Space3() {
+function Space5() {
   const [count, setCount] = useState(0)
 
   const handleClick = () => {
@@ -21,4 +21,4 @@ function Space3() {
   )
 }
 
-export default Space3
+export default Space5
