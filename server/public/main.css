@@ -49,3 +49,9 @@ img.orange-planet {
 
   /* position: absolute; */
 }
+
+.alienShip {
+  margin-top: 200px;
+  margin-left: 250px;
+  max-width: 200px;
+}
