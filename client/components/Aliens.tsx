@@ -5,15 +5,24 @@ import { FormEvent, useState, ChangeEvent, useEffect } from 'react'
 function Aliens() {
   const [sound, playSound] = useState(false)
 
+  const audio = new Audio('./images/alienSound.wav')
+
   const handleClick = () => {
-    playSound(true)
+    play()
   }
 
-  const audio = new Audio('./images/alienSound.wav')
+  const play = () => {
+    audio.play()
+    noPlay()
+  }
+
+  const noPlay = () => {
+    play()
+  }
 
   const img = (
     <img
-      onClick={audio.play()}
+      onClick={handleClick}
       className="alienShip"
       src="./images/alienShip.png"
       alt="aliens"
