@@ -1,8 +1,12 @@
+import Space100 from './Space100'
+
 function App() {
   return (
     <div>
-      <h1>App</h1>
-      <p>React development has begun!</p>
+      <div className="banner">
+        <h1>A long time ago in a galaxy far, far away...</h1>
+      </div>
+      <Space100 />
     </div>
   )
 }

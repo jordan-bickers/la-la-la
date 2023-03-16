@@ -9,11 +9,19 @@ function Space100() {
     togglePic(!pic)
   }
 
-  const img = <img src="./images/planet1.png" alt="red-blue-planet" />
-  const flam = <img src="./images/flamingo.png" alt="flamingo" />
+  const img = (
+    <img
+      className="red-blue-planet"
+      src="./images/planet1.png"
+      alt="red-blue-planet"
+    />
+  )
+  const flam = (
+    <img className="flamingo" src="./images/flamingo.png" alt="flamingo" />
+  )
 
   return (
-    <div className="flamingo" onClick={handleClick}>
+    <div className="click-change" onClick={handleClick}>
       {pic ? img : flam}
     </div>
   )
