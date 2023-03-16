@@ -11,20 +11,22 @@ function Space100() {
 
   const img = (
     <img
+      onClick={handleClick}
       className="red-blue-planet"
       src="./images/planet1.png"
       alt="red-blue-planet"
     />
   )
   const flam = (
-    <img className="flamingo" src="./images/flamingo.png" alt="flamingo" />
+    <img
+      onClick={handleClick}
+      className="flamingo"
+      src="./images/flamingo.png"
+      alt="flamingo"
+    />
   )
 
-  return (
-    <div className="click-change" onClick={handleClick}>
-      {pic ? img : flam}
-    </div>
-  )
+  return <div className="click-change">{pic ? img : flam}</div>
 }
 
 export default Space100
