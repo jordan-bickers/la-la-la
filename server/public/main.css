@@ -61,7 +61,6 @@ img.orange-planet {
   animation-name: slidein;
   z-index: 40;
   max-width: 300px;
-  padding: 200px;
   left: 300px;
 
 
@@ -82,8 +81,8 @@ img.orange-planet {
 .planet6 {
   width: 400px;
   max-width: 300px;
-  padding: 200px;
   right: 100px;
+  margin-top: 200px;
 }
 
 .spinningAnimation {
