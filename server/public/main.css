@@ -78,3 +78,24 @@ img.orange-planet {
     width: 100%;
   }
 }
+
+.planet6 {
+  width: 400px;
+  max-width: 300px;
+  padding: 200px;
+  right: 100px;
+}
+
+.spinningAnimation {
+  animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg)
+  } 
+  to {
+    transform: rotate(359deg);
+  }
+}
+
