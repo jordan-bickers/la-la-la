@@ -1,29 +1,23 @@
-import { useState } from 'react'
+import { useParams } from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import { FormEvent, useState, ChangeEvent, useEffect } from 'react'
 
 function Aliens() {
   const [leftPos, newLeft] = useState(10)
   const [topPos, newTop] = useState(10)
-  const [audio, setAudio] = useState(false)
+  const audio = new Audio('./images/alienSound.wav')
 
   const handleClick = () => {
-    const newAudio = new Audio('./images/alienSound.wav')
-    if (audio && !newAudio.paused) {
-      newAudio.pause()
-    } else {
-      newAudio.loop = true
-      newAudio.play()
-      setAudio(true)
-    }
-
-    newLeft(Math.floor(Math.random() * 50))
-    newTop(Math.floor(Math.random() * 10))
+    audio.loop = false
+    audio.pause
     console.log(leftPos)
   }
 
   const handleHover = () => {
-    const playAudio = new Audio('./images/alienSound.wav')
-    playAudio.loop = true
-    playAudio.play()
+    audio.loop = true
+    audio.play()
+    newLeft(Math.floor(Math.random() * 50))
+    newTop(Math.floor(Math.random() * 10))
   }
 
   const img = (
