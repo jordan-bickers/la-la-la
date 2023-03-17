@@ -6,14 +6,11 @@ function Aliens() {
   const [sound, playSound] = useState(false)
 
   const handleClick = () => {
-    playSound(!sound)
+    playSound(true)
     const audio = new Audio('./images/alienSound.wav')
-    if (sound) {
-      audio.pause()
-    } else {
-      audio.loop = true
-      audio.play()
-    }
+    audio.loop = true
+    audio.play()
+    console.log('idk')
   }
 
   const img = (
