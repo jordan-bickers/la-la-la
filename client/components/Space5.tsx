@@ -4,7 +4,7 @@ function Space5() {
   const [count, setCount] = useState(0)
 
   const handleClick = () => {
-    setCount(count + 3)
+    setCount(count + 5)
     console.log('testing', count)
   }
 
@@ -12,7 +12,7 @@ function Space5() {
     <div>
       <img
         onClick={handleClick}
-        style={{ left: count * 3 + 'vw', position: 'fixed' }}
+        style={{ bottom: count * 3 + 'vw', position: 'fixed' }}
         className="planet5"
         src="./images/planet5.png"
         alt="planet3"

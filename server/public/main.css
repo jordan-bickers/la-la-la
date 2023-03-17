@@ -55,3 +55,23 @@ img.orange-planet {
   margin-left: 250px;
   max-width: 200px;
 }
+
+.planet5 {
+  animation-duration: 3s;
+  animation-name: slidein;
+  z-index: 40;
+  max-width: 300px;
+  padding: 200px;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 200%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
