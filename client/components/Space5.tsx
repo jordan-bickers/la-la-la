@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 function Space5() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(-2)
 
   const handleClick = () => {
     setCount(count + 5)
