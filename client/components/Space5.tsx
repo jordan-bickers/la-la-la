@@ -15,7 +15,7 @@ function Space5() {
         style={{ bottom: count * 3 + 'vw', position: 'fixed' }}
         className="planet5"
         src="./images/planet5.png"
-        alt="planet3"
+        alt="planet5"
       />
     </div>
   )

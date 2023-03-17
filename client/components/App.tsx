@@ -3,6 +3,7 @@ import Space100 from './Space100'
 import Space3 from './Space3'
 import Space4 from './Space4'
 import Space5 from './Space5'
+import Space6 from './Space6'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Space4 />
       <Space5 />
       <Aliens />
+      <Space6 />
     </div>
   )
 }
