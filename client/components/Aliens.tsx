@@ -5,19 +5,15 @@ import { FormEvent, useState, ChangeEvent, useEffect } from 'react'
 function Aliens() {
   const [sound, playSound] = useState(false)
 
-  const audio = new Audio('./images/alienSound.wav')
-
   const handleClick = () => {
-    play()
-  }
-
-  const play = () => {
-    audio.play()
-    noPlay()
-  }
-
-  const noPlay = () => {
-    play()
+    playSound(!sound)
+    const audio = new Audio('./images/alienSound.wav')
+    if (sound) {
+      audio.pause()
+    } else {
+      audio.loop = true
+      audio.play()
+    }
   }
 
   const img = (
