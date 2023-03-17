@@ -3,14 +3,17 @@ import { Link } from 'react-router-dom'
 import { FormEvent, useState, ChangeEvent, useEffect } from 'react'
 
 function Aliens() {
-  const [sound, playSound] = useState(false)
+  const [leftPos, newLeft] = useState(10)
+  const [topPos, newTop] = useState(10)
 
   const handleClick = () => {
-    playSound(true)
     const audio = new Audio('./images/alienSound.wav')
     audio.loop = true
     audio.play()
-    console.log('idk')
+
+    newLeft(Math.floor(Math.random() * 50))
+    newTop(Math.floor(Math.random() * 10))
+    console.log(leftPos)
   }
 
   const img = (
@@ -18,6 +21,7 @@ function Aliens() {
       onClick={handleClick}
       className="alienShip"
       src="./images/alienShip.png"
+      style={{ left: leftPos + 'vw', position: 'fixed', top: topPos + 'vw' }}
       alt="aliens"
     />
   )
