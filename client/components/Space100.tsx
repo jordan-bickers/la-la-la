@@ -6,7 +6,9 @@ function Space100() {
   const [pic, togglePic] = useState(true)
 
   const handleClick = () => {
+    const audio = new Audio('./images/flamingoSound.wav')
     togglePic(!pic)
+    audio.play()
   }
 
   const img = (

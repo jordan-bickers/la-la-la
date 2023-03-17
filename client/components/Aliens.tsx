@@ -18,6 +18,7 @@ function Aliens() {
 
   const img = (
     <img
+      onMouseOver={handleClick}
       onClick={handleClick}
       className="alienShip"
       src="./images/alienShip.png"

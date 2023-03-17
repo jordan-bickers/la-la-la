@@ -4,7 +4,9 @@ function Space3() {
   const [count, setCount] = useState(0)
 
   const handleClick = () => {
+    const audio = new Audio('./images/woo.wav')
     setCount(count + 3)
+    audio.play()
     console.log('testing', count)
   }
 

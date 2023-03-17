@@ -6,7 +6,9 @@ function Space4() {
   const [style, newStyle] = useState(false)
 
   const handleClick = () => {
+    const audio = new Audio('./images/woahJo.wav')
     newStyle(true)
+    audio.play()
   }
 
   const img = (
