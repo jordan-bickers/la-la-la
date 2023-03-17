@@ -9,7 +9,7 @@ function Space5() {
   }
 
   useEffect(() => {
-    const audio = new Audio('./images/alienSound.wav')
+    const audio = new Audio('./images/whoosh.wav')
     audio.play()
   })
 
