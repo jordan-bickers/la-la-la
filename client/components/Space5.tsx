@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, ChangeEvent, useEffect } from 'react'
 
 function Space5() {
   const [count, setCount] = useState(-2)
@@ -7,6 +7,11 @@ function Space5() {
     setCount(count + 5)
     console.log('testing', count)
   }
+
+  useEffect(() => {
+    const audio = new Audio('./images/alienSound.wav')
+    audio.play()
+  })
 
   return (
     <div>
