@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-function Space5() {
+function Space6() {
   const [count, setCount] = useState(-2)
 
   const handleClick = () => {
@@ -13,12 +13,12 @@ function Space5() {
       <img
         onClick={handleClick}
         style={{ bottom: count * 3 + 'vw', position: 'fixed' }}
-        className="planet5"
-        src="./images/planet5.png"
-        alt="planet5"
+        className="planet6"
+        src="./images/planet6.png"
+        alt="planet6"
       />
     </div>
   )
 }
 
-export default Space5
+export default Space6
