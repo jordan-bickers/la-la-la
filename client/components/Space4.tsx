@@ -12,7 +12,7 @@ function Space4() {
   const img = (
     <img
       onClick={handleClick}
-      style={{ width: style ? '2000px' : '50px' }}
+      style={{ width: style ? '1000px' : '50px' }}
       className="orange-planet"
       src="./images/planet4.png"
       alt="orange-planet"
