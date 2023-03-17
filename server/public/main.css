@@ -23,7 +23,7 @@ h1 {
 .planet3 {
   z-index: 10;
   max-width: 150px;
-  padding: 20px;
+  margin-left: 100px;
 }
 
 .flamingo {
@@ -54,4 +54,27 @@ img.orange-planet {
   margin-top: 200px;
   margin-left: 250px;
   max-width: 200px;
+}
+
+.planet5 {
+  animation-duration: 3s;
+  animation-name: slidein;
+  z-index: 40;
+  max-width: 300px;
+  padding: 200px;
+  left: 300px;
+
+
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 200%;
+  }
+
+  to {
+    margin-left: 10%;
+    width: 100%;
+  }
 }
